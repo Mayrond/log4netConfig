@@ -83,12 +83,12 @@ modules.xml
 *.ipr
 
 ### Unity ###
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-Assets/AssetStoreTools*
+*[Ll]ibrary/
+*[Tt]emp/
+*[Oo]bj/
+*[Bb]uild/
+*[Bb]uilds/
+*Assets/AssetStoreTools*
 
 # Visual Studio cache directory
 .vs/
@@ -140,3 +140,6 @@ $RECYCLE.BIN/
 *.msix
 *.msm
 *.msp
+
+bin/
+obj/

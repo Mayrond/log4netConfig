@@ -1,12 +1,20 @@
-﻿using System;
+﻿using log4net;
 
 namespace log4netConfig
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        private static readonly ILog Log = LogManager.GetLogger(nameof(Program));
+
+        static Program()
         {
-            Console.WriteLine("Hello World!");
+            Logger.ConfigureLogging();
+        }
+
+        static void Main()
+        {
+            Log.Info("info");
+            Log.Warn("warn");
         }
     }
 }
